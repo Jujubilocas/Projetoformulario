@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Pesquisa de Satisfação - IFTO</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    h2 { margin-top: 30px; }
+    label { display: block; margin-top: 10px; }
+    input, select, textarea { width: 100%; padding: 8px; margin-top: 5px; }
+    .radio-group { margin-top: 5px; }
+    .radio-group label { display: inline-block; margin-right: 10px; }
+    button { margin-top: 20px; padding: 10px 20px; }
+  </style>
+</head>
+<body>
+
+<h1>Pesquisa de Satisfação Institucional - IFTO</h1>
+
+<form>
+
+<h2>1. Identificação</h2>
+<label>Nome completo*</label>
+<input type="text" required>
+
+<label>E-mail*</label>
+<input type="email" required>
+
+<label>Telefone/WhatsApp*</label>
+<input type="tel" required>
+
+<label>Idade</label>
+<input type="number">
+
+<label>Vínculo*</label>
+<select required>
+  <option>Discente</option>
+  <option>Docente</option>
+  <option>Técnico administrativo</option>
+  <option>Pai/Responsável</option>
+  <option>Comunidade externa</option>
+</select>
+
+<label>Campus</label>
+<input type="text">
+
+<label>Curso/Setor</label>
+<input type="text">
+
+<label>Turno</label>
+<select>
+  <option>Matutino</option>
+  <option>Vespertino</option>
+  <option>Noturno</option>
+</select>
+
+<h2>2. Origem do Contato</h2>
+<label>Como conheceu o IFTO?*</label>
+<select required>
+  <option>Redes sociais</option>
+  <option>Indicação</option>
+  <option>Site institucional</option>
+  <option>Eventos</option>
+  <option>Outros</option>
+</select>
+
+<h2>3. Experiência Acadêmica (1 a 5)</h2>
+<label>Qualidade do ensino</label>
+<input type="number" min="1" max="5">
+
+<label>Didática</label>
+<input type="number" min="1" max="5">
+
+<label>Organização</label>
+<input type="number" min="1" max="5">
+
+<label>Integração teoria-prática</label>
+<input type="number" min="1" max="5">
+
+<h2>4. Infraestrutura (1 a 5)</h2>
+<label>Salas</label>
+<input type="number" min="1" max="5">
+
+<label>Laboratórios</label>
+<input type="number" min="1" max="5">
+
+<label>Biblioteca</label>
+<input type="number" min="1" max="5">
+
+<label>Limpeza</label>
+<input type="number" min="1" max="5">
+
+<label>Tecnologia</label>
+<input type="number" min="1" max="5">
+
+<h2>5. Serviços</h2>
+<label>Atendimento</label>
+<input type="number" min="1" max="5">
+
+<label>Comunicação</label>
+<input type="number" min="1" max="5">
+
+<label>Facilidade de resolução</label>
+<input type="number" min="1" max="5">
+
+<h2>6. Permanência</h2>
+<label>Já pensou em desistir?</label>
+<select>
+  <option>Sim</option>
+  <option>Não</option>
+</select>
+
+<label>Motivos</label>
+<textarea></textarea>
+
+<label>Grau de dificuldade</label>
+<input type="number" min="1" max="5">
+
+<h2>7. Inovação</h2>
+<label>Interesse em novos serviços</label>
+<textarea></textarea>
+
+<h2>8. Feedback</h2>
+<label>Pontos fortes</label>
+<textarea></textarea>
+
+<label>Problemas</label>
+<textarea></textarea>
+
+<label>Sugestões</label>
+<textarea></textarea>
+
+<h2>9. Avaliação Geral</h2>
+<label>Nota geral</label>
+<input type="number" min="1" max="10">
+
+<label>Recomendaria o IFTO?</label>
+<select>
+  <option>Sim</option>
+  <option>Não</option>
+</select>
+
+<h2>10. Consentimento</h2>
+<label>
+  <input type="checkbox" required> Autorizo o uso dos dados
+</label>
+
+<label>
+  <input type="checkbox"> Autorizo contato posterior
+</label>
+
+<button type="submit">Enviar</button>
+
+</form>
+
+</body>
+</html>
