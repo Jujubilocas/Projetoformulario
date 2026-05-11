@@ -4,11 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulário de Pesquisa IFTO</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="img/5e450ed4-bca2-4850-bc97-abca41c0a155.png" />
   </head>
+
   <body>
     <header>
       <h1>Pesquisa de Satifação - IFTO</h1>
     </header>
+    <img src="img/5e450ed4-bca2-4850-bc97-abca41c0a155.png" alt="ifto-logo" />
 
     <form action="" method="get" id="idFormulario">
       <fieldset>
@@ -50,7 +55,7 @@
         <input type="number" id="idIdade" name="Idade" min="10" />
         <br />
 
-        <label>Vínculo</label> <br />
+        <label>Vínculo</label><br />
 
         <input type="radio" id="idVinculo" value="Discente" />
         <label for="idVinculoDiscente">Discente</label>
@@ -65,30 +70,42 @@
         <label for="idVinculoResposavel">Pais/Resposável</label>
 
         <input type="radio" id="idVinculo" value="Comunidade" />
-        <label for="idVinculoComunidade">Comunidade Externa</label> <br />
+        <label for="idVinculoComunidade">Comunidade Externa</label><br />
 
         <label for="idCampus">Campus</label>
-        <input type="text" id="idCampus" name="campus" /> <br />
+        <input type="text" id="idCampus" name="campus" /><br />
 
         <label for="idCurso">Curso</label>
-        <input type="text" id="idCurso" name="curso" /> <br />
+        <input type="text" id="idCurso" name="curso" /><br />
 
-        <label>Turno</label>
+        <label>Turno</label><br />
 
-        <input type="radio" id="turnoMatutino" name="turno" value="Matutino" />
-        <label for="turnoMatutino">Matutino</label>
+        <label>
+          <input
+            type="radio"
+            id="turnoMatutino"
+            name="turno"
+            value="Matutino"
+          />
+          Matutino
+        </label>
 
-        <input
-          type="radio"
-          id="turnoVespertino"
-          name="turno"
-          value="Vespertino"
-        />
-        <label for="turnoVespertino">Vespertino</label>
+        <label>
+          <input
+            type="radio"
+            id="turnoVespertino"
+            name="turno"
+            value="Vespertino"
+          />
+          Vespertino
+        </label>
 
-        <input type="radio" id="turnoNoturno" name="turno" value="Noturno" />
-        <label for="turnoNoturno">Noturno</label>
+        <label>
+          <input type="radio" id="turnoNoturno" name="turno" value="Noturno" />
+          Noturno
+        </label>
       </fieldset>
+
       <fieldset>
         <legend>Origem do Contato</legend>
         <select required>
@@ -100,266 +117,313 @@
           <option value="Outros">Outros</option>
         </select>
       </fieldset>
+
       <fieldset>
         <legend>Experiência Academica</legend>
-        <label>Qualidade de Ensino</label> <br />
-        <label> <input type="radio" name="Ensino" value="1" required />1</label>
-        <label> <input type="radio" name="Ensino" value="2" required />2</label>
-        <label> <input type="radio" name="Ensino" value="3" required />3</label>
-        <label> <input type="radio" name="Ensino" value="4" required />4</label>
-        <label> <input type="radio" name="Ensino" value="5" required />5</label
-        ><br />
-        <label>Didática</label> <br />
-        <label>
-          <input type="radio" name="Didática" value="1" required />1</label
-        >
-        <label>
-          <input type="radio" name="Didática" value="2" required />2</label
-        >
-        <label>
-          <input type="radio" name="Didática" value="3" required />3</label
-        >
-        <label>
-          <input type="radio" name="Didática" value="4" required />4</label
-        >
-        <label>
-          <input type="radio" name="Didática" value="5" required />5</label
+
+        <label>Qualidade de Ensino</label><br />
+        <label><input type="radio" name="Ensino" value="1" required />1</label>
+        <label><input type="radio" name="Ensino" value="2" required />2</label>
+        <label><input type="radio" name="Ensino" value="3" required />3</label>
+        <label><input type="radio" name="Ensino" value="4" required />4</label>
+        <label><input type="radio" name="Ensino" value="5" required />5</label
         ><br />
 
-        <label>Organização</label> <br />
-        <label>
-          <input type="radio" name="Organizção" value="1" required />1</label
+        <label>Didática</label><br />
+        <label
+          ><input type="radio" name="Didática" value="1" required />1</label
         >
-        <label>
-          <input type="radio" name="Organizção" value="2" required />2</label
+        <label
+          ><input type="radio" name="Didática" value="2" required />2</label
         >
-        <label>
-          <input type="radio" name="Organizção" value="3" required />3</label
+        <label
+          ><input type="radio" name="Didática" value="3" required />3</label
         >
-        <label>
-          <input type="radio" name="Organizção" value="4" required />4</label
+        <label
+          ><input type="radio" name="Didática" value="4" required />4</label
         >
-        <label>
-          <input type="radio" name="Organizção" value="5" required />5</label
+        <label><input type="radio" name="Didática" value="5" required />5</label
+        ><br />
+
+        <label>Organização</label><br />
+        <label
+          ><input type="radio" name="Organizção" value="1" required />1</label
         >
-        <br />
-        <label>Integração teória-prática</label> <br />
-        <label>
-          <input
+        <label
+          ><input type="radio" name="Organizção" value="2" required />2</label
+        >
+        <label
+          ><input type="radio" name="Organizção" value="3" required />3</label
+        >
+        <label
+          ><input type="radio" name="Organizção" value="4" required />4</label
+        >
+        <label
+          ><input type="radio" name="Organizção" value="5" required />5</label
+        ><br />
+
+        <label>Integração teória-prática</label><br />
+        <label
+          ><input
             type="radio"
             name="Integração teória-prática"
             value="1"
             required
           />1</label
         >
-        <label>
-          <input
+        <label
+          ><input
             type="radio"
             name="Integração teória-prática"
             value="2"
             required
           />2</label
         >
-        <label>
-          <input
+        <label
+          ><input
             type="radio"
             name="Integração teória-prática"
             value="3"
             required
           />3</label
         >
-        <label>
-          <input
+        <label
+          ><input
             type="radio"
             name="Integração teória-prática"
             value="4"
             required
           />4</label
         >
-        <label>
-          <input
+        <label
+          ><input
             type="radio"
             name="Integração teória-prática"
             value="5"
             required
           />5</label
-        >
-        <br />
+        ><br />
       </fieldset>
+
       <fieldset>
         <legend>Infraestrutura</legend>
-        <label>Salas</label> <br />
-        <label> <input type="radio" name="Salas" value="1" required />1</label>
-        <label> <input type="radio" name="Salas" value="2" required />2</label>
-        <label> <input type="radio" name="Salas" value="3" required />3</label>
-        <label> <input type="radio" name="Salas" value="4" required />4</label>
-        <label> <input type="radio" name="Salas" value="5" required />5</label
+
+        <label>Salas</label><br />
+        <label><input type="radio" name="Salas" value="1" required />1</label>
+        <label><input type="radio" name="Salas" value="2" required />2</label>
+        <label><input type="radio" name="Salas" value="3" required />3</label>
+        <label><input type="radio" name="Salas" value="4" required />4</label>
+        <label><input type="radio" name="Salas" value="5" required />5</label
         ><br />
-        <label>Laboratórios</label> <br />
-        <label>
-          <input type="radio" name="Laboratórios" value="1" required />1</label
+
+        <label>Laboratórios</label><br />
+        <label
+          ><input type="radio" name="Laboratórios" value="1" required />1</label
         >
-        <label>
-          <input type="radio" name="Laboratórios" value="2" required />2</label
+        <label
+          ><input type="radio" name="Laboratórios" value="2" required />2</label
         >
-        <label>
-          <input type="radio" name="Laboratórios" value="3" required />3</label
+        <label
+          ><input type="radio" name="Laboratórios" value="3" required />3</label
         >
-        <label>
-          <input type="radio" name="Laboratórios" value="4" required />4</label
+        <label
+          ><input type="radio" name="Laboratórios" value="4" required />4</label
         >
-        <label>
-          <input type="radio" name="Laboratórios" value="5" required />5</label
+        <label
+          ><input type="radio" name="Laboratórios" value="5" required />5</label
         ><br />
-        <label>Biblioteca</label> <br />
-        <label>
-          <input type="radio" name="Biblioteca" value="1" required />1</label
+
+        <label>Biblioteca</label><br />
+        <label
+          ><input type="radio" name="Biblioteca" value="1" required />1</label
         >
-        <label>
-          <input type="radio" name="Biblioteca" value="2" required />2</label
+        <label
+          ><input type="radio" name="Biblioteca" value="2" required />2</label
         >
-        <label>
-          <input type="radio" name="Biblioteca" value="3" required />3</label
+        <label
+          ><input type="radio" name="Biblioteca" value="3" required />3</label
         >
-        <label>
-          <input type="radio" name="Biblioteca" value="4" required />4</label
+        <label
+          ><input type="radio" name="Biblioteca" value="4" required />4</label
         >
-        <label>
-          <input type="radio" name="Biblioteca" value="5" required />5</label
+        <label
+          ><input type="radio" name="Biblioteca" value="5" required />5</label
         ><br />
-        <label>Limpeza</label> <br />
-        <label>
-          <input type="radio" name="Limpeza" value="1" required />1</label
-        >
-        <label>
-          <input type="radio" name="Limpeza" value="2" required />2</label
-        >
-        <label>
-          <input type="radio" name="Limpeza" value="3" required />3</label
-        >
-        <label>
-          <input type="radio" name="Limpeza" value="4" required />4</label
-        >
-        <label> <input type="radio" name="Limpeza" value="5" required />5</label
+
+        <label>Limpeza</label><br />
+        <label><input type="radio" name="Limpeza" value="1" required />1</label>
+        <label><input type="radio" name="Limpeza" value="2" required />2</label>
+        <label><input type="radio" name="Limpeza" value="3" required />3</label>
+        <label><input type="radio" name="Limpeza" value="4" required />4</label>
+        <label><input type="radio" name="Limpeza" value="5" required />5</label
         ><br />
-        <label>Tecnologia</label> <br />
-        <label>
-          <input type="radio" name="Tecnologia" value="1" required />1</label
+
+        <label>Tecnologia</label><br />
+        <label
+          ><input type="radio" name="Tecnologia" value="1" required />1</label
         >
-        <label>
-          <input type="radio" name="Tecnologia" value="2" required />2</label
+        <label
+          ><input type="radio" name="Tecnologia" value="2" required />2</label
         >
-        <label>
-          <input type="radio" name="Tecnologia" value="3" required />3</label
+        <label
+          ><input type="radio" name="Tecnologia" value="3" required />3</label
         >
-        <label>
-          <input type="radio" name="Tecnologia" value="4" required />4</label
+        <label
+          ><input type="radio" name="Tecnologia" value="4" required />4</label
         >
-        <label>
-          <input type="radio" name="Tecnologia" value="5" required />5</label
+        <label
+          ><input type="radio" name="Tecnologia" value="5" required />5</label
         ><br />
       </fieldset>
+
       <fieldset>
         <legend>Serviços</legend>
-        <label>Atendimento</label> <br />
-        <label>
-          <input type="radio" name="Atendimento" value="1" required />1</label
+
+        <label>Atendimento</label><br />
+        <label
+          ><input type="radio" name="Atendimento" value="1" required />1</label
         >
-        <label>
-          <input type="radio" name="Atendimento" value="2" required />2</label
+        <label
+          ><input type="radio" name="Atendimento" value="2" required />2</label
         >
-        <label>
-          <input type="radio" name="Atendimento" value="3" required />3</label
+        <label
+          ><input type="radio" name="Atendimento" value="3" required />3</label
         >
-        <label>
-          <input type="radio" name="Atendimento" value="4" required />4</label
+        <label
+          ><input type="radio" name="Atendimento" value="4" required />4</label
         >
-        <label>
-          <input type="radio" name="Atendimento" value="5" required />5</label
+        <label
+          ><input type="radio" name="Atendimento" value="5" required />5</label
         ><br />
-        <legend>Comunicação</legend>
-        <label>Salas</label> <br />
-        <label>
-          <input type="radio" name="Comunicação" value="1" required />1</label
+
+        <label>Comunicação</label><br />
+        <label
+          ><input type="radio" name="Comunicação" value="1" required />1</label
         >
-        <label>
-          <input type="radio" name="Comunicação" value="2" required />2</label
+        <label
+          ><input type="radio" name="Comunicação" value="2" required />2</label
         >
-        <label>
-          <input type="radio" name="Comunicação" value="3" required />3</label
+        <label
+          ><input type="radio" name="Comunicação" value="3" required />3</label
         >
-        <label>
-          <input type="radio" name="Comunicação" value="4" required />4</label
+        <label
+          ><input type="radio" name="Comunicação" value="4" required />4</label
         >
-        <label>
-          <input type="radio" name="Comunicação" value="5" required />5</label
+        <label
+          ><input type="radio" name="Comunicação" value="5" required />5</label
         ><br />
-        <legend>Facilidade de Resolução</legend>
-        <label>Salas</label> <br />
-        <label>
-          <input type="radio" name="Resolução" value="1" required />1</label
+
+        <label>Facilidade de Resolução</label><br />
+        <label
+          ><input type="radio" name="Resolução" value="1" required />1</label
         >
-        <label>
-          <input type="radio" name="Resolução" value="2" required />2</label
+        <label
+          ><input type="radio" name="Resolução" value="2" required />2</label
         >
-        <label>
-          <input type="radio" name="Resolução" value="3" required />3</label
+        <label
+          ><input type="radio" name="Resolução" value="3" required />3</label
         >
-        <label>
-          <input type="radio" name="Resolução" value="4" required />4</label
+        <label
+          ><input type="radio" name="Resolução" value="4" required />4</label
         >
-        <label>
-          <input type="radio" name="Resolução" value="5" required />5</label
+        <label
+          ><input type="radio" name="Resolução" value="5" required />5</label
         ><br />
       </fieldset>
+
       <fieldset>
         <legend>Permanência</legend>
-        <label>Já pensou em desistir?</label> <br />
+
+        <label>Já pensou em desistir?</label><br />
         <select name="desistir">
           <option value="Não">Não</option>
           <option value="Sim">Sim</option></select
         ><br />
+
         <label>Motivo</label><br />
-        <label>
-          <input
-            type="checkbox"
-            name="Financeiro"
-            value="Finânceiro"
-          />Financeiro</label
-        >
-        <br />
-        <label>
-          <input
-            type="checkbox"
-            name="Transporte"
-            value="Transporte"
-          />Transporte</label
+        <label><input type="checkbox" name="Financeiro" />Financeiro</label
         ><br />
-        <label>
-          <input
-            type="checkbox"
-            name="Acadêmico"
-            value="Acadêmico"
-          />Acadêmico</label
+        <label><input type="checkbox" name="Transporte" />Transporte</label
         ><br />
-        <label>
-          <input
-            type="checkbox"
-            name="Trabalho"
-            value="Trabalho"
-          />Trabalho</label
-        ><br />
-        <label>
-          <input type="checkbox" name="Outros" value="Outros" />Outros</label
-        >
-        <br />
-        <label>Grau de Dificuldade</label> <br />
-        <label> <input type="radio" name="Dificuldade" value="1" />1 </label>
-        <label> <input type="radio" name="Dificuldade" value="2" />2 </label>
-        <label> <input type="radio" name="Dificuldade" value="3" />3 </label>
-        <label> <input type="radio" name="Dificuldade" value="4" />4 </label>
-        <label> <input type="radio" name="Dificuldade" value="5" />5 </label>
+        <label><input type="checkbox" name="Acadêmico" />Acadêmico</label><br />
+        <label><input type="checkbox" name="Trabalho" />Trabalho</label><br />
+        <label><input type="checkbox" name="Outros" />Outros</label><br />
+
+        <label>Grau de Dificuldade</label><br />
+        <label><input type="radio" name="Dificuldade" value="1" />1</label>
+        <label><input type="radio" name="Dificuldade" value="2" />2</label>
+        <label><input type="radio" name="Dificuldade" value="3" />3</label>
+        <label><input type="radio" name="Dificuldade" value="4" />4</label>
+        <label><input type="radio" name="Dificuldade" value="5" />5</label>
       </fieldset>
+
+      <fieldset>
+        <legend>Inovação</legend>
+
+        <label for="inovacao">Interesse em novos serviços</label><br />
+        <textarea
+          id="inovacao"
+          name="inovacao"
+          placeholder="Digite sua opinião"
+        ></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>Feedback</legend>
+
+        <label for="pontosFortes">Pontos Fortes</label><br />
+        <input type="text" id="pontosFortes" name="pontosFortes" /><br /><br />
+
+        <label for="problemas">Problemas</label><br />
+        <input type="text" id="problemas" name="problemas" /><br /><br />
+
+        <label for="sugestoes">Sugestões</label><br />
+        <input type="text" id="sugestoes" name="sugestoes" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Avaliação Geral</legend>
+
+        <label for="notaGeral">Nota geral</label><br />
+        <select id="notaGeral" name="notaGeral" required>
+          <option value="">Selecione...</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option></select
+        ><br /><br />
+
+        <label>Você recomendaria o IFTO?</label><br />
+        <label
+          ><input type="radio" name="recomendacao" value="Sim" required />
+          Sim</label
+        >
+        <label
+          ><input type="radio" name="recomendacao" value="Não" required />
+          Não</label
+        >
+      </fieldset>
+
+      <fieldset>
+        <legend>Consentimento</legend>
+
+        <label>
+          <input type="checkbox" name="autorizacaoDados" required />
+          Autorizo o uso dos meus dados para fins de pesquisa </label
+        ><br /><br />
+
+        <label>Autorização para contato posterior</label><br />
+        <label
+          ><input type="radio" name="contatoPosterior" value="Sim" required />
+          Sim</label
+        >
+        <label
+          ><input type="radio" name="contatoPosterior" value="Não" required />
+          Não</label
+        >
+      </fieldset>
+
       <button type="submit">Enviar</button>
     </form>
   </body>
